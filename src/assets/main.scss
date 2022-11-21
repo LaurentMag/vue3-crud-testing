@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(225, 224, 220);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+//-------------------------------------------------------------
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  background-color: rgb(191, 191, 191);
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+
+    width: min(40rem, 90%);
+
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.3rem;
+    }
+  }
+}
+.router-link-active {
+  color: rgb(16, 137, 33);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #34495e;
+    bottom: -20%;
+    left: 0;
+  }
+}
+
+//-------------------------------------------------------------
+
+.homevue-p {
+  color: rgb(0, 0, 137);
+  font-size: 2rem;
+}
+
+//-------------------------------------------------------------
+
+.cards-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: min(15rem, 90%);
+
+  background-color: rgb(93, 93, 93);
+  border-radius: 10px;
+
+  color: whitesmoke;
+
+  padding: 1.5rem;
+
+  .card-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-block-start: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+
+.cards-form {
+  margin-block: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  width: 20rem;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card-edit-form {
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
